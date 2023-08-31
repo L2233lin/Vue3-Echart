@@ -1,0 +1,93 @@
+// css 初始化
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(@/assets/bg.jpg) no-repeat top center;
+    background-size: 100vw 120vh;
+    line-height: 1.15;
+}
+
+.panel {
+    position: relative;
+    height: 15.5vw;
+    padding: 0 0.5vw 1.2vw;
+    border: 1px solid rgba(25, 186, 139, 0.17);
+    margin-bottom: 0.75vw;
+    background: url(@/assets/line.png) rgba(255, 255, 255, 0.03);
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        border-left: 2px solid #02a6b5;
+        border-top: 2px solid #02a6b5;
+        content: '';
+    }
+
+    &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 10px;
+        height: 10px;
+        border-right: 2px solid #02a6b5;
+        border-top: 2px solid #02a6b5;
+        content: '';
+    }
+
+    .panel-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+
+        &::before {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #02a6b5;
+            border-bottom: 2px solid #02a6b5;
+            content: '';
+        }
+
+        &::after {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 10px;
+            height: 10px;
+            border-right: 2px solid #02a6b5;
+            border-bottom: 2px solid #02a6b5;
+            content: '';
+        }
+    }
+
+    h2 {
+        height: 2.4vw;
+        color: #fff;
+        line-height: 2.4vw;
+        text-align: center;
+        font-size: 1vw;
+        font-weight: 400;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 0.5vw;
+        }
+    }
+
+    .chart {
+        width: 100%;
+        height: 90%;
+    }
+}
+
